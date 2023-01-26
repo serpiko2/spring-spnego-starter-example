@@ -14,7 +14,7 @@ import lombok.Setter;
 public class UserPassphrase {
   @Id
   Long id;
-  String passPhrase;
+  String passphrase;
 
   @ManyToOne
   UserInfo userInfo;

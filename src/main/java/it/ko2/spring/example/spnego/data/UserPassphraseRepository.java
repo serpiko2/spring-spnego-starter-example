@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserPassphraseRepository extends JpaRepository<UserPassphrase, Long> {
-  @Query("select ui.id as userId, ui.username, up.id as passphraseId, up.passPhrase from UserInfo ui, " +
+  @Query("select ui.id as userId, ui.username, up.id as passphraseId, up.passphrase from UserInfo ui, " +
       "UserPassphrase up where ui.username = ?#{ principal?.username }")
   Page<UserPassphraseProjection> findUserPassphrases(Pageable pageable);
 
