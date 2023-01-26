@@ -4,6 +4,7 @@ import it.ko2.spring.example.spnego.data.UserInfoRepository;
 import it.ko2.spring.example.spnego.exeption.ApplicationException;
 import it.ko2.spring.example.spnego.exeption.EntityNotFoundException;
 import it.ko2.spring.example.spnego.service.IUserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
